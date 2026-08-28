@@ -1,0 +1,2 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{color:#10231b;background:#f7faf8}::selection{background:#bce8d3}input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #77cba5;outline-offset:2px}.grid-bg{background-image:radial-gradient(#bed6c9 1px,transparent 1px);background-size:22px 22px}.content h2{font-size:1.65rem;font-weight:700;letter-spacing:-.03em;margin-bottom:.7rem}.content p{color:#52635b;line-height:1.75}.content section{scroll-margin-top:6rem}

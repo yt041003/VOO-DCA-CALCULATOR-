@@ -1,0 +1,9 @@
+export type SymbolCode = 'VOO' | (string & {});
+export type PricePoint = { date: string; close: number };
+export type Dividend = { date: string; amount: number };
+export type MarketDataset = { symbol: SymbolCode; prices: PricePoint[]; dividends: Dividend[]; source: string; isDemonstration?: boolean };
+export type Frequency = 'monthly';
+export type DcaInput = { symbol: SymbolCode; monthlyContribution: number; initialInvestment: number; startDate: string; endDate: string; reinvestDividends: boolean; frequency: Frequency };
+export type TimelinePoint = { date: string; contributions: number; portfolioValue: number; shares: number; dividends: number };
+export type YearRow = { year: number; contributions: number; endingShares: number; dividends: number; portfolioValue: number; gainLoss: number };
+export type DcaResult = { endingValue: number; investedValue: number; cashDividends: number; totalContributions: number; investmentGain: number; totalReturn: number; shares: number; dividendsReceived: number; dividendsReinvested: number; annualizedReturn: number | null; contributionMultiple: number; timeline: TimelinePoint[]; years: YearRow[] };
