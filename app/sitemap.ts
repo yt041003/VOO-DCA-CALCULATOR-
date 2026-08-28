@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';import {getSiteUrl} from '@/lib/seo/siteUrl';export default function sitemap():MetadataRoute.Sitemap{return[{url:`${getSiteUrl()}/voo-dca-calculator`,lastModified:new Date(),changeFrequency:'weekly',priority:1}]}

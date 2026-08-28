@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';import {getSiteUrl} from '@/lib/seo/siteUrl';export default function robots():MetadataRoute.Robots{const ready=Boolean(process.env.MARKET_DATA_API_URL);return{rules:{userAgent:'*',...(ready?{allow:'/'}:{disallow:'/'})},sitemap:`${getSiteUrl()}/sitemap.xml`}}
